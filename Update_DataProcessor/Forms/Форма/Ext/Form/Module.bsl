@@ -10,6 +10,6 @@
 
 	DocorationItem = ThisForm.Items.Add("Status", Type("FormDecoration"), ThisForm);
 	DocorationItem.Type = FormDecorationType.Label;
-	DecorationItem.Text = "Hello dear";
+	DecorationItem.Text = "Hello dear, how are you?";
 
 КонецПроцедуры
