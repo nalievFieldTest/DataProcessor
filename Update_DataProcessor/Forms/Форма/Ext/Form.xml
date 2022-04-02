@@ -4,12 +4,74 @@
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
+	<ChildItems>
+		<InputField name="Client" id="1">
+			<DataPath>Client</DataPath>
+			<ContextMenu name="ClientКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ClientРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Country" id="7">
+			<DataPath>Country</DataPath>
+			<ContextMenu name="CountryКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="CountryРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="City" id="4">
+			<DataPath>City</DataPath>
+			<ContextMenu name="CityКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="CityРасширеннаяПодсказка" id="6"/>
+		</InputField>
+	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
 				<v8:Type>cfg:ExternalDataProcessorObject.Update_DataProcessor</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Client" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Client</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="City" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>City</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Country" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Country</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>
