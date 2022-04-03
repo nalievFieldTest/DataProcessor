@@ -1,6 +1,6 @@
 ﻿
-&НаСервере
-Процедура ПриСозданииНаСервере(Отказ, СтандартнаяОбработка)
+&AtServer
+Procedure OnCreateAtServer(Cancel, StandartProcessing)
 	Message = New UserMessage;
 	Message.Text = "Today is "+ CurrentSessionDate();
 	Message.Message();	
@@ -14,4 +14,4 @@
 	DocorationItem = ThisForm.Items.Add("Status", Type("FormDecoration"), ThisForm);
 	DocorationItem.Type = FormDecorationType.Label;
 	DecorationItem.Text = "Hello dear, how are you?";
-КонецПроцедуры
+EndProcedure
