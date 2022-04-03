@@ -5,21 +5,45 @@
 		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Client" id="1">
-			<DataPath>Client</DataPath>
-			<ContextMenu name="ClientКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ClientРасширеннаяПодсказка" id="3"/>
-		</InputField>
-		<InputField name="Country" id="7">
-			<DataPath>Country</DataPath>
-			<ContextMenu name="CountryКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="CountryРасширеннаяПодсказка" id="9"/>
-		</InputField>
-		<InputField name="City" id="4">
-			<DataPath>City</DataPath>
-			<ContextMenu name="CityКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="CityРасширеннаяПодсказка" id="6"/>
-		</InputField>
+		<UsualGroup name="Group" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Group</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="GroupРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<InputField name="Client" id="1">
+					<DataPath>Client</DataPath>
+					<ContextMenu name="ClientКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ClientРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Country" id="7">
+					<DataPath>Country</DataPath>
+					<ContextMenu name="CountryКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="CountryРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="City" id="4">
+					<DataPath>City</DataPath>
+					<ContextMenu name="CityКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="CityРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="Action" id="12">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Action</CommandName>
+			<ExtendedTooltip name="ActionРасширеннаяПодсказка" id="13"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -74,4 +98,20 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Action" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Action</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Action</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+	</Commands>
 </Form>

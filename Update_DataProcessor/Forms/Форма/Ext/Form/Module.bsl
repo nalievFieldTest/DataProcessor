@@ -12,8 +12,8 @@ Procedure OnCreateAtServer(Cancel, StandartProcessing)
 	Parameters.insert("city", "Moscow");
 	FillPropertyValues(ThisForm, Parameters);
 
-	DocorationItem = ThisForm.Items.Add("Status", Type("FormDecoration"), ThisForm);
-	DocorationItem.Type = FormDecorationType.Label;
+	DecorationItem = ThisForm.Items.Add("Status", Type("FormDecoration"), ThisForm);
+	DecorationItem.Type = FormDecorationType.Label;
 	DecorationItem.Text = "Hello dear, how are you?";
 EndProcedure
 #EndRegion
