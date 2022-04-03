@@ -1,4 +1,5 @@
 ﻿
+#Region FormHandlers
 &AtServer
 Procedure OnCreateAtServer(Cancel, StandartProcessing)
 	Message = New UserMessage;
@@ -15,3 +16,4 @@ Procedure OnCreateAtServer(Cancel, StandartProcessing)
 	DocorationItem.Type = FormDecorationType.Label;
 	DecorationItem.Text = "Hello dear, how are you?";
 EndProcedure
+#EndRegion
