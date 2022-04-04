@@ -11,7 +11,7 @@ Procedure OnCreateAtServer(Cancel, StandartProcessing)
 	ClientParameters.insert("country", "Russia");
 	ClientParameters.insert("city", "Moscow");
 	FillPropertyValues(ThisForm, ClientParameters);
-	//123
+
 	DecorationItem = ThisForm.Items.Add("Status", Type("FormDecoration"), ThisForm);
 	DecorationItem.Type = FormDecorationType.Label;
 	DecorationItem.Text = "Hello dear, how are you?";
