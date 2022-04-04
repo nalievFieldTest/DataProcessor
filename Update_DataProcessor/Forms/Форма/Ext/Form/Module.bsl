@@ -6,11 +6,11 @@ Procedure OnCreateAtServer(Cancel, StandartProcessing)
 	Message.Text = "Today is "+ CurrentSessionDate();
 	Message.Message();	
 
-	Parameters = New Structure;
-	Parameters.insert("client", "client#1");
-	Parameters.insert("country", "Russia");
-	Parameters.insert("city", "Moscow");
-	FillPropertyValues(ThisForm, Parameters);
+	ClientParameters = New Structure;
+	ClientParameters.insert("client", "client#1");
+	ClientParameters.insert("country", "Russia");
+	ClientParameters.insert("city", "Moscow");
+	FillPropertyValues(ThisForm, ClientParameters);
 
 	DecorationItem = ThisForm.Items.Add("Status", Type("FormDecoration"), ThisForm);
 	DecorationItem.Type = FormDecorationType.Label;
