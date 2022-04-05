@@ -2,8 +2,9 @@
 #Region FormHandlers
 &AtServer
 Procedure OnCreateAtServer(Cancel, StandartProcessing)
+	StandartProcessing = False;
 	Message = New UserMessage;
-	Message.Text = "Today is "+ CurrentSessionDate();
+	Message.Text = "Today is"+ CurrentSessionDate();
 	Message.Message();	
 
 	ClientParameters = New Structure;
@@ -16,4 +17,5 @@ Procedure OnCreateAtServer(Cancel, StandartProcessing)
 	DecorationItem.Type = FormDecorationType.Label;
 	DecorationItem.Text = "Hello dear, how are you?";
 EndProcedure
+
 #EndRegion
